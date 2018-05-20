@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+   <head>
+      <meta charset="UTF-8">
+      <title>Change Network Password</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+
+   <body>
+      <!-- <we don't submit the form it gets handled by javascript> -->
+      <form id="password_form" >
+         <h2>Change Network Password</h2>
+         <p>
+         <label for="username" class="floatLabel">Username</label>
+         <input id="username" name="username" type="text">
+         <span>Username not found</span>
+         </p>
+         <p>
+         <label for="current_password" class="floatLabel">Current Password</label>
+         <input id="current_password" name="current_password" type="password">
+         <span>Password invalid</span>
+         </p>
+         <p>
+         <label for="new_password" class="floatLabel">New Password</label>
+         <input id="new_password" name="new_password" type="password">
+         <span>Enter a password longer than 8 characters</span>
+         </p>
+         <p>
+         <label for="confirm_password" class="floatLabel">Confirm Password</label>
+         <input id="confirm_password" name="confirm_password" type="password">
+         <span>Your passwords do not match</span>
+         </p>
+         <p>
+         <input type="submit" value="Submit" id="submit">
+         </p>
+      </form>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script  src="js/index.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   </body>
+
+
+</html>
